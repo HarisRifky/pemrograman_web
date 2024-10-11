@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Side Travel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            height: 100%;
+            color: white;
+        }
+        .hero {
+            background-image: url('https://mappingalong.com/wp-content/uploads/2023/09/bukit-cinta.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 600;
+        }
+        .book-now {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+        .hero-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 50px;
+        }
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+        .search-bar {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .search-bar input, .search-bar button {
+            background: transparent;
+            border: none;
+            color: white;
+            display: flex;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+        .search-bar input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .search-bar button {
+            background-color: white;
+            color: black;
+            border-radius: 25px;
+            padding: 10px 30px;
+            display: flex;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <header>
+            <div class="logo">WILD SIDE</div>
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">BLOG</a>
+                <a href="#">ABOUT</a>
+                <a href="#">DESTINATION</a>
+                <a href="#">TOUR</a>
+                <a href="#" class="book-now">BOOK NOW</a>
+            </nav>
+        </header>
+        <div class="hero-content">
+            <h1>EXPLORE YOUR COUNTRY</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="LOCATION">
+                <input type="text" placeholder="DATE">
+                <input type="text" placeholder="GUEST">
+                <button>EXPLORE NOW</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
